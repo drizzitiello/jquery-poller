@@ -1,6 +1,5 @@
 import $ from 'jquery';
 
-
 export default class HttpRequest {
 
     static get(url, options) {
