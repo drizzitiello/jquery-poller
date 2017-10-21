@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import HttpRequest from 'http_request';
+import HttpRequest from './http_request';
 
 export default class Poller {
     /**
