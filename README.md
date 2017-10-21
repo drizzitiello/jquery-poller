@@ -1,4 +1,4 @@
-## Polling with Javascript, RequireJS &amp; jQuery
+## Polling with ES6, Javascript & jQuery
 ### Usage
 
 #### 1. Start polling after 10 seconds
