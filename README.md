@@ -1,4 +1,4 @@
-## Polling with ES6, Javascript & jQuery
+## Polling with ES6 Javascript & jQuery
               
 ### Usage
 
