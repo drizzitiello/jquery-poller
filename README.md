@@ -1,4 +1,17 @@
 ## Polling with ES6, Javascript & jQuery
+
+## Options
+
+| Property  | Type     | Default value                        | Description                                                                    |
+|-----------|----------|--------------------------------------|--------------------------------------------------------------------------------|
+| delay     | Integer  | 30000                                | The number of milliseconds to delay execution of the next                      |
+| maxFailed | Integer  | 3                                    | The maximum number of failed requests before giving up                         |
+| limit     | Integer  | -1                                   | The maximum number of requests an instance can process, or -1 to remove limit  |
+| cache     | Boolean  | false                                | If set to false, it will force requested pages not to be cached by the browser |
+| timeout   | Integer  | 10000                                | Set a timeout (in milliseconds) for the request                                |
+| onSuccess | Function | (data, textStatus, xhr) => {}        | A function to be called if the request succeeds                                |
+| onError   | Function | (xhr, textStatus, errorThrown) => {} | A function to be called if the request fails                                   |
+
 ### Usage
 
 #### 1. Start polling after 10 seconds
@@ -40,3 +53,4 @@ var p = new Poller(url, {
 p.makeRequest();
 p.startPolling();
 ```
+
