@@ -119,7 +119,7 @@ export default class Poller {
         this.options.onError(this, error);
 
         if (this.isPolling) {
-            if (this.errorsCount >= this.options.maxFailedRequests) {
+            if (this.errorsCount >= this.options.maxFailed) {
                 this.stopPolling();
             } else {
                 this.errorsCount++;
